@@ -1,4 +1,4 @@
-(ns twilio-clojure-demo.core.handler-test
+(ns holler.core.handler-test
   (:require [clojure.test :refer :all]
             [ring.mock.request :as mock]
             [twilio-clojure-demo.core.handler :refer :all]))
