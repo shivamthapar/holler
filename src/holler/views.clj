@@ -9,4 +9,4 @@
   (clostache/render (read-template template-file) params))
 
 (defn index [hollers]
-  (render-template "index" {:content (count hollers)}))
+  (render-template "index" {:hollers hollers}))

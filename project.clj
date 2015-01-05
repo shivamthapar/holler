@@ -5,6 +5,7 @@
   :plugins [[lein-ring "0.8.13"]]
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.3.1"]
+                 [twilio-api "1.0.0"]
                  [de.ubercode.clostache/clostache "1.3.1"]
                  [postgresql "9.1-901.jdbc4"]
                  [org.clojure/java.jdbc "0.2.3"]
