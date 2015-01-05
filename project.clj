@@ -15,4 +15,6 @@
                  [ring/ring-defaults "0.1.3"]]
   :dev-dependencies [[ring/ring-devel "0.3.7"]]
   :ring {:handler holler.core/application}
-  :main holler.core)
+  :main ^:skip-aot holler.core
+  :uberjar-name "holler-standalone.jar"
+  :profiles {:uberjar {:aot :all}})
