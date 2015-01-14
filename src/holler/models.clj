@@ -1,14 +1,9 @@
 (ns holler.models
+  (:require [lobos.migrations :as lobos])
   (:use korma.db
         korma.core))
 
-(defdb hollerdb
-  (postgres {:classname "org.postgresql.Driver"
-   :subprotocol "postgresql"
-   :subname "//localhost:5432/hollerdb"
-   :user "holler"
-   :password "holler_pw"
-  }))
+(defdb hollerdb (postgres lobos/hollerdb))
 
 (defentity hollers)
 
