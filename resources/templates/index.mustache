@@ -39,8 +39,8 @@
 setInterval(function() {
   $.getJSON("/hollers", function(data){
     var arr = data["hollers"];
+    $("#hollers").html("");
     $.each(arr, function(i, val){
-      $("#hollers").html("");
       $("#hollers").append("<li>"+arr[i].content+"</li>");
     });
   })
