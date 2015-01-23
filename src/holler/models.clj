@@ -9,7 +9,7 @@
 
 (defn all
   []
-  (select hollers))
+  (select hollers (order :created :DESC)))
 
 (defn create
   [holler]

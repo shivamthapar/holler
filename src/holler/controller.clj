@@ -10,7 +10,7 @@
            [twilio.core :as twilio]))
 
 (defn index []
-  (view/index))
+  (view/index (model/all)))
 
 (defn sms-handler [req]
   (model/create {:content (:Body (:params req))}))
