@@ -10,3 +10,8 @@
 (defn all
   []
   (select hollers))
+
+(defn create
+  [holler]
+  (let [id (count (select hollers))]
+    (insert hollers (values {:id id, :content (:content holler)})))) 
