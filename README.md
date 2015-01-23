@@ -12,7 +12,7 @@ You will need [Leiningen][] 2.0.0 or above installed.
 
 To run:
 
-    lein run
+    lein ring server
 
 ## Acknowledgements
 
