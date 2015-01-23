@@ -8,5 +8,5 @@
 (defn render-template [template-file params]
   (clostache/render (read-template template-file) params))
 
-(defn index [hollers]
-  (render-template "index" {:hollers hollers}))
+(defn index []
+  (render-template "index" {}))
